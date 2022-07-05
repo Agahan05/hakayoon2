@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <title>Crud application</title>
+  </head>
+  <body style="color: white; background-color: #1d2630">
+    <div class="container mt-5">
+      <div class="text-center">
+        <h1 class="display-5 mb-5"><strong>CRUD</strong></h1>
+      </div>
+      <div class="main row justify-content-center">
+        <form
+          action=""
+          id="student-form"
+          class="row justify-content-center mb-4"
+          autocomplete="off"
+        >
+          <div class="col-10 col-md-8 mb-3">
+            <label for="FirstName"> Введи имя студент</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              placeholder="Enter first name"
+            />
+          </div>
+          <div class="col-10 col-md-8 mb-3">
+            <label for="LastName"> Введите фамилию студент</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              placeholder="Enter last name"
+            />
+          </div>
+          <div class="col-10 col-md-8 mb-3">
+            <label for="rollno"> Roll no </label>
+            <input
+              type="text"
+              class="form-control"
+              id="rollno"
+              placeholder="Enter Roll no"
+            />
+          </div>
+          <div class="col-10 col-md-8">
+            <input
+              class="btn btn-success add-btn"
+              type="submit"
+              value="Submit"
+            />
+          </div>
+        </form>
+        <div class="col-12 col-md-10 mt-5">
+          <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Rool on</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="student-list">
+              <tr>
+                <td>Dear</td>
+                <td>Programmer</td>
+                <td>25</td>
+                <td>
+                  <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                  <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
